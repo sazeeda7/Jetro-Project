@@ -33,3 +33,7 @@ target/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Local secrets (copy from application-local.properties.example)
+application-local.properties
+**/application-local.properties

@@ -1,0 +1,10 @@
+# Copy to application-local.properties (same folder). That file is gitignored.
+#
+# Generate a secret (PowerShell):
+#   -join ((48..57) + (65..70) | Get-Random -Count 64 | ForEach-Object { [char]$_ })
+#
+# Or set env var before running:
+#   $env:JWT_SECRET = "your-64-char-hex-or-long-passphrase-here"
+
+jwt.secret=REPLACE_WITH_YOUR_OWN_SECRET_AT_LEAST_32_CHARACTERS
+spring.datasource.password=
